@@ -11,7 +11,7 @@ const navItems = [
 
 export default function BottomNav() {
   return (
-    <footer className="shrink-0 border-none pb-0" style={{ backgroundColor: '#000000', border: 'none', boxShadow: 'none' }}>
+    <footer className="shrink-0 border-none pb-6" style={{ backgroundColor: '#000000', border: 'none', boxShadow: 'none' }}>
       <div className="flex justify-around items-center pt-1 pb-0" style={{ backgroundColor: '#000000', border: 'none' }}>
         {navItems.map((item) => {
           const Icon = item.icon;
@@ -20,8 +20,7 @@ export default function BottomNav() {
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `flex flex-col items-center justify-center flex-1 transition-colors duration-200 ${
-                  isActive ? 'text-[#ff9500]' : 'text-gray-500'
+                `flex flex-col items-center justify-center flex-1 transition-colors duration-200 ${isActive ? 'text-[#ff9500]' : 'text-gray-500'
                 }`
               }
               style={{ backgroundColor: 'transparent', border: 'none' }}

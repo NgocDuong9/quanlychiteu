@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     // Check if user set
     if (!currentUser) {
-      const names = ['Dịu', 'Dương', 'Khác'];
+      const names = ['Phương', 'Dương', 'Khác'];
       const defaultName = names[0];
       const savedName = localStorage.getItem('user-profile-name');
 
